@@ -1,0 +1,11 @@
+.box_bar {
+    background: #0e0e0e;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+
+    min-height: 1px;
+    padding-left: 20px;
+}
