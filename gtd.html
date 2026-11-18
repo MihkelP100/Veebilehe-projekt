@@ -6,16 +6,59 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="gtd.css">
+        <script src="gtd.js" defer></script>
     </head>
 
     <body>
         <div class="top_box">
             <h1>Getting things done</h1>
+            <div class="top_inbox">
+                <a href="index.html">Liigu tagasi</a>
+            </div>
         </div>
-        <div class="box_bar">
-            <h2>a b c</h2>
+        <div class="itembox">
+                    
+            <div class="itembox_inner">
+                <input type="text" id="textbox_main" class="textbox" placeholder="Sisesta tegevus">
+            </div>
         </div>
-        <a href="index.html">Liigu tagasi</a>
+
+        <div class="a_container">
+            <div id="list_in_block" class="a_box">
+                <div class="l_topbox">
+                    <h3>In</h3>
+                    <button id="addto_in" class="add_button" onclick="add_to_list('list_in')">-</button>
+                </div>
+                <ul id="list_in">
+
+                </ul>
+            </div>
+
+            <div id="test" class="a_box">
+                <div class="l_topbox">
+                    <h3>test</h3>
+                </div>
+                <ul>
+                    
+                </ul>
+            </div>
+            <div class="a_box">
+                <div class="l_topbox">
+                    <h3>test</h3>
+                </div>
+                <ul>
+                    
+                </ul>
+            </div>
+            <div class="a_box">
+                <div class="l_topbox">
+                    <h3>test</h3>
+                </div>
+                <ul>
+                    
+                </ul>
+            </div>
+        </div>
 
     </body>
 

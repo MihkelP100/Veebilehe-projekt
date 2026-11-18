@@ -1,11 +1,71 @@
-.box_bar {
+h3  {
+    align-self: center;
+    margin: 5px;
+}
+.itembox {
     background: #0e0e0e;
     height: fit-content;
     width: 100%;
     display: flex;
     align-self: center;
     justify-self: center;
-
-    min-height: 1px;
-    padding-left: 20px;
+    min-width: 100%;
+    margin: 0;
+    padding: 10px;
 }
+.itembox_inner {
+    background: #323232;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+
+    min-height: 100px;
+    padding: 12px 12px 12px 12px;
+    margin: 2px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.textbox {
+    border-radius: 0px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+.a_container {
+
+    margin-top: 2px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+.a_box {    
+    border-radius: 0px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+
+    box-sizing: border-box;
+
+}
+.l_topbox {
+    padding: 2px;
+    background-color: #323232;
+    height: fit-content;
+    display: flex;
+}
+
+.add_button {
+    border-radius: 0px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    margin: 6px;
+    width: 24px;
+    height: 24px;
+    margin-left: auto;
+    align-self: flex-end;
+}
+
