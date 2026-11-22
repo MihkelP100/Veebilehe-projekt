@@ -20,6 +20,8 @@
                     
             <div class="itembox_inner">
                 <input type="text" id="textbox_main" class="textbox" placeholder="Sisesta tegevus">
+                <button id="edit" class="edit_button" onclick="add_to_list('list_in')">Muuda</button>
+                <button id="remove" class="edit_button" onclick="add_to_list('list_in')">Eemalda nimekirjast</button>
             </div>
         </div>
 
@@ -27,7 +29,7 @@
             <div id="list_in_block" class="a_box">
                 <div class="l_topbox">
                     <h3>In</h3>
-                    <button id="addto_in" class="add_button" onclick="add_to_list('list_in')">-</button>
+                    <button id="addto_in" class="add_button" onclick="add_to_list('list_in')">v</button>
                 </div>
                 <ul id="list_in">
 

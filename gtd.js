@@ -4,12 +4,27 @@ const button_in = document.getElementById("addto_in");
 
 const list_in = document.getElementById("list_in");
 
-function add_to_list(ln) {
+const listData = {
+    in: [],
+    test: []
+}
+
+let tegevused = JSON.parse(localStorage.getItem("GTD_listid")) || listData;
+let valitud = null;
+
+function salvesta() {
+    localStorage.setItem("GTD_listid", JSON.stringify(tegevused))
+}
+
+//maintext.addEventListener("textbox_main"
+
+
+function add_to_list(ln, sta) {
     const li = document.createElement("li");
     const list = document.getElementById(ln);
-    
-    li.textContent = maintext.value;
+    if (maintext.value != "") {
+        li.textContent = maintext.value;
 
-    list.appendChild(li);
-
+        list.appendChild(li);
+    }
 }
