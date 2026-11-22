@@ -4,8 +4,26 @@ h3  {
     color:aliceblue;
     text-shadow: 1px 1px 1px black;
 }
+ul {
+    list-style: none;
+    margin: 12px 0 0;
+    padding: 2px;
+}
+li {
+    margin: 2px;
+    padding: 4px;
+    background-color: #555555;
+    border-radius: 0px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+
+}
 li.selected  {
-    background-color: rgb(153, 153, 234);
+    background-color: rgb(97, 97, 129);
+    border-color: rgb(148, 228, 68);
 }
 .itembox {
     background: #0e0e0e;
@@ -33,12 +51,18 @@ li.selected  {
     margin-bottom: 0px;
 }
 .textbox {
+    width: 300px;
+    height: 200px;
     border-radius: 0px;
     border-style: solid;
     border-width: 1px;
     border-color: black;
     margin-left: 20px;
     margin-right: 20px;
+
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
 }
 .a_container {
 
