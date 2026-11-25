@@ -11,15 +11,20 @@ ul {
 }
 li {
     margin: 2px;
-    padding: 4px;
-    background-color: #555555;
+    padding: 6px;
+    background-color: #323232;
+
     border-radius: 0px;
     border-style: solid;
     border-width: 1px;
-    border-color: black;
+    border-color: #707070;
+    box-shadow: 0 0 0 1px black;
+
     word-break: break-word;
     overflow-wrap: anywhere;
 
+    color: aliceblue;
+    font-size: 17px;
 }
 li.selected  {
     background-color: rgb(97, 97, 129);
@@ -53,16 +58,22 @@ li.selected  {
 .textbox {
     width: 300px;
     height: 200px;
+    max-width: 500px;
+    max-height: 500px;
+
     border-radius: 0px;
     border-style: solid;
     border-width: 1px;
     border-color: black;
+    box-shadow: 0 0 0 1px #707070;
+
     margin-left: 20px;
     margin-right: 20px;
 
     box-sizing: border-box;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 14px;
+    font-size: 16px;
+    color: black;
 }
 .a_container {
 
@@ -79,7 +90,6 @@ li.selected  {
     border-color: black;
 
     box-sizing: border-box;
-
 }
 .l_topbox {
     padding: 2px;
@@ -98,13 +108,21 @@ li.selected  {
     border-radius: 0px;
     border-style: solid;
     border-width: 1px;
-    border-color: black;
-    background-color: aliceblue;
+    border-color: #aaa;
+    box-shadow: 0 0 0 1px black;
+
+    background-color: #353535;
+    color: aliceblue;
+    font-style: bold;
+
     margin: 4px;
     width: 24px;
     height: 24px;
+
     margin-left: auto;
     align-self: flex-end;
+
+    
 }
 .edit_button {
     border-radius: 0px;
@@ -112,8 +130,13 @@ li.selected  {
     border-width: 1px;
     border-color: black;
     background-color: rgb(97, 118, 137);
-    margin: 4px;
-    width: 100px;
+    box-shadow: 0 0 0 1px #606060;
+
+    margin: 8px;
+    width: 150px;
     height: 50px;
+
+    font-size: 14px;
+    font-family: Verdana;
 }
 
