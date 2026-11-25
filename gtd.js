@@ -56,6 +56,7 @@ function reloadall() {
 }
 
 function buttons() {
+    //väär kui textbox on tühi
     const aaa = maintext.value !== "";
     const nähtav = valitudTekst !== null;
     document.getElementById("edit").hidden = !nähtav;
