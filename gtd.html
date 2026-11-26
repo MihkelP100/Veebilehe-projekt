@@ -20,8 +20,8 @@
                     
             <div class="itembox_inner">
                 <textarea type="text" id="text_main" class="textbox" placeholder="Sisesta tegevus"></textarea>
-                <button id="edit" class="edit_button" onclick="" hidden>Muuda</button>
-                <button id="remove" class="edit_button" onclick="" hidden>Eemalda nimekirjast</button>
+                <button id="edit" class="edit_button" onclick="edit()" hidden>Muuda</button>
+                <button id="remove" class="edit_button" onclick="del()" hidden>Eemalda nimekirjast</button>
             </div>
         </div>
 
@@ -36,27 +36,30 @@
                 </ul>
             </div>
 
-            <div id="test" class="a_box">
+            <div id="next" class="a_box">
                 <div class="l_topbox">
-                    <h3>test</h3>
+                    <h3>Kohesed tegevused</h3>
+                    <button id="next_add" class="add_button" onclick="add('next')" hidden>v</button>
                 </div>
-                <ul>
+                <ul id="list_next">
                     
                 </ul>
             </div>
-            <div class="a_box">
+            <div id="waiting" class="a_box">
                 <div class="l_topbox">
-                    <h3>test</h3>
+                    <h3>Ootel</h3>
+                    <button id="waiting_add" class="add_button" onclick="add('waiting')" hidden>v</button>
                 </div>
-                <ul>
+                <ul id="list_waiting">
                     
                 </ul>
             </div>
-            <div class="a_box">
+            <div id="project" class="a_box">
                 <div class="l_topbox">
-                    <h3>test</h3>
+                    <h3>Projektid/kunagi hiljem</h3>
+                    <button id="project_add" class="add_button" onclick="add('project')" hidden>v</button>
                 </div>
-                <ul>
+                <ul id="list_project">
                     
                 </ul>
             </div>

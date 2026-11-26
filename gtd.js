@@ -4,9 +4,12 @@ const button_in = document.getElementById("addto_in");
 
 const list_in = document.getElementById("list_in");
 
-localStorage.clear();
+//localStorage.clear();
 const listData = {
     in: [],
+    next: [],
+    waiting: [],
+    project: []
 }
 
 let tegevused = JSON.parse(localStorage.getItem("GTD_listid")) || listData;
@@ -53,6 +56,7 @@ function reloadall() {
 }
 
 function buttons() {
+    //väär kui textbox on tühi
     const aaa = maintext.value !== "";
     const nähtav = valitudTekst !== null;
     document.getElementById("edit").hidden = !nähtav;
@@ -97,13 +101,38 @@ function add(s) {
         const tekst2 = tegevused[valitudTekst.nimi].splice(valitudTekst.indeks, 1)[0];
 
         tegevused[s].push(tekst2);
+        v = valitudTekst.nimi
         valitudTekst = null;
 
         salvesta();
-        loadList(valitudTekst.nimi);
+        loadList(v);
         loadList(s);
         buttons();
     }
+}
+function edit() {
+    if (!valitudTekst) {
+        return;
+    }
+    // ei leidnud eriti lihtsat lahendust esialgu
+
+    salvesta();
+}
+function del() {
+    if (!valitudTekst) {
+        return;
+    }
+
+    tegevused[valitudTekst.nimi].splice(valitudTekst.indeks,1);
+    valitudTekst = null;
+    salvesta();
+    reloadall();
+    buttons();
+}
+//mingi hoiatus lisada
+function clearall() {
+    localStorage.clear();
+    reloadall()
 }
 
 maintext.addEventListener("input", buttons);
