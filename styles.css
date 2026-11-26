@@ -25,6 +25,14 @@ a {
     color: #999;
     margin: 10px;
 }
+.maintext {
+    color: aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    margin: 6px;
+    margin-top: 10px;
+    letter-spacing: 1px;
+}
 
 .bar {
     background:linear-gradient(to left, #464343 0%,#77c2e5 50%, #464343 100%);
@@ -33,9 +41,10 @@ a {
 }
 .box {
     background:#303337;
-    border-color: #111;
+    border-color: #808080;
     border-width: 1px;
     border-style: solid;
+    box-shadow: 0 0 0 1px #111;
 
     height: 2px;
     margin: 4px;

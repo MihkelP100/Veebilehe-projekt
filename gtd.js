@@ -114,7 +114,7 @@ function edit() {
     if (!valitudTekst) {
         return;
     }
-    // ei leidnud eriti lihtsat lahendust esialgu
+    // mingi lahendus vaja mõelda
 
     salvesta();
 }
